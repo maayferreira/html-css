@@ -21,9 +21,21 @@
             text-align: left;
         }
 
+        caption {
+            font-size: 1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+        /* odd= impar ou (2n-1) // even= par ou (2n) */
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
         }
         
         td.num {
@@ -48,10 +60,11 @@
             TD=TITULO / TH=DADO
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
 
         </thead>
@@ -68,12 +81,40 @@
                 <td>Rio de janeiro</td>
                 <td class="num">17 264 943</td>
             </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 141 626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 444 380</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 882 965</td>
+            </tr>
+            <tr>
+                <td>Pernanbuco</td>
+                <td class="num">9 058 931</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 794 957</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 121 025</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361</td>
+            </tr>
 
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
-                <td class="num">84.352.783</td>
+                <th scope="row">Total de habitantes</th>
+                <td class="num">154.407.028</td>
             </tr>
 
         </tfoot>
