@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <!-- autocomplete="off" tira o preenchimento automatico do formulário-->
+     <form action="cadrasto.php" method="post" autocomplete="off">
+        <!--Label sempre usa o 'id' para relacionar com qual objeto de formulário está conectado/etiquetado-->
+        <P><label for="inome">Nome:</label>
+            <input type="text" name="Nome" id="inome"> </P>
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="Sobrenome" id="isobrenome"></p>
+        <p>Idade:
+            <input type="number" name="idade" id="idade"></p>
+        <p>E-mail:
+            <input type="email" name="email" id="email"></p>
+        <p>senha: 
+        <input type="password" name="senha" id="senha"></p>
+        <input type="submit" value="Enviar">
+     </form>
+    
+</body>
+</html>
+
+<!--Existem 2 tipos de metodos 
+GET= metodo que coloca os dados na url (metodo padrão, deve ser usado quando NÃO FOR dados sensiveis ex:nome, sobrenome) abaixo de 3mil baites ou seja não pode ultapassar 3 mil letras, usados para enviar arquivos leves
+
+POST= metodo que tira os dados da url (metodo alternativo, deve ser usado quando os dados FOR sensivel ex:senhas)
+acima de 3mil baites ou seja que ultrapasse 3 mil letras, usado para enviar arquivos grandes
+**Porem os dados ficam escondidos somente para o usuario.**
+-->

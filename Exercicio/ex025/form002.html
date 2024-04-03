@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulario</title>
+</head>
+<body>
+    <!--Required = campo obrigatorio de resposta-->
+    <!--minlength = minimo de caracteres que podem ser inseridos nos campos-->
+    <!--Maxlength = maximo de caracteres inseridos nos campos-->
+    <!--size = tamanho da caixa -->
+    <!--placeholder = escrita dentro da caixa-->
+    <h1>teste de usuario</h1>
+    <form action="cadrasto.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usuario" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="min 8 carcteres" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="senha" id="isen" required minlength="8" maxlength="20" placeholder="min 8 caracteres" autocomplete="new-password"> 
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
