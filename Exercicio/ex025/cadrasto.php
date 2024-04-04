@@ -1,1 +1,1 @@
-Cadrasto enviado com sucesso!!
+Formulário enviado com sucesso!! :)
