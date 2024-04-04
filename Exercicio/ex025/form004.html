@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <!--Fieldset = Coloca os elementos envelopados na tag dentro de uma caixa, num só grupo,podendo tambem separar os dados em grupos
+        legend = Dá um titulo a caixa -->
+    <form action="cadrasto.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome Completo:</label>
+                <input type="text" name="nome" id="inome" minlength="10" maxlength="30" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" required>
+            </p>
+            <p>
+                <label for="itelefone">Telefone:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" required placeholder="(xx)xxxxx-xxxx">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+ 
+    </form>
+
+</body>
+</html>
+<!--Estudar sobre RegEx-->
